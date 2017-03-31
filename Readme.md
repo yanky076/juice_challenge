@@ -13,13 +13,13 @@ sondhi.varun@gmail.com
 # Installation
 1. Download the zip file, unzip and cd into that directory.
 2. Activate virtualenv
-'''
+```
 $ source pvenv/Scripts/activate
-'''
+```
 3. Install required libraries
-'''
+```
 $ sudo pip install -r py_requirements.txt
-'''
+```
 4. Start the Project. Note - will require port 8080 to be available on your machine
 ```
 python main.py
