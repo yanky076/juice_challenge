@@ -8,17 +8,18 @@ sondhi.varun@gmail.com
 # Prerequisites
 1. Python 2.7
 2. virtualenv 15.1.0
+3. pip 9
 
 # Installation
-1. Navigate to desired directory and create virtual environment
-```
-virtualenv juice_challenge
-```
-2. Copy content of project's zip file into this folder
-3. Install all required libraries
-```
-pip install -r py_requirements.txt
-```
+1. Download the zip file, unzip and cd into that directory.
+2. Activate virtualenv
+'''
+$ source pvenv/Scripts/activate
+'''
+3. Install required libraries
+'''
+$ sudo pip install -r py_requirements.txt
+'''
 4. Start the Project. Note - will require port 8080 to be available on your machine
 ```
 python main.py
@@ -36,4 +37,4 @@ I try to follow below best practices in most of the projects that I work on.
 ## What would you have done differently?
 I could have
 1. Implemented test cases to run the application through various scenarios to ensure that backend is rock solid.
-2. I believe the UI is usable as such, but I could have added few fancy alerts and fancy animations in case it was a public facing application. 
+2. I believe the UI is usable as such, but I could have added few fancy alerts and fancy animations in case it was a public facing application.
