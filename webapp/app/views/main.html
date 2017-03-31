@@ -1,0 +1,43 @@
+<div  ng-controller="MainCtrl">
+  <div class="well">
+    <h3>Juice Challenge</h3>
+    <p>
+      <form class="form-inline" name="fileSelectionForm" ng-submit="onFormSubmit()">
+        <input class="form-control" file-reader="file" type="file" required accept=".csv"/>
+        <button class="btn btn-md btn-primary" type="submit" ng-disabled="file == undefined">Upload</button>
+    </form>
+    </p>
+  </div>
+
+  <div class="row" ng-show="parsedData != undefined">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="form-inline pull-right" name="searchForm">
+            <input class="form-control" type="text" required placeholder="Search table ..." ng-model="searchTable"/>
+          </form>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Total Spending</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="d in parsedData | filter:searchTable">
+                <td>{{d.category}}</td>
+                <td>{{d.spend}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

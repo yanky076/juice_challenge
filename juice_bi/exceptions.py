@@ -1,0 +1,2 @@
+class JuiceException(Exception):
+    pass
